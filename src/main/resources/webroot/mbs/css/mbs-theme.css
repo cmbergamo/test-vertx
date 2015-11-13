@@ -1,0 +1,212 @@
+/**
+*******************
+THEME - SYSTEM
+*******************
+**/
+
+/**
+PACE
+**/
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #29d;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+
+/**
+PANEL
+**/
+
+.mbs-panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+.mbs-panel-bar {
+	/*background: rgba(255, 255, 255, 0.4);
+	color: #2c3742;*/
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #eaeaea 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #eaeaea 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#eaeaea 100%); 
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+/**
+TABLE
+**/
+
+.bootstrap-table table thead,
+.bootstrap-table table thead th,
+.bootstrap-table table tbody,
+.bootstrap-table table tbody td,
+.bootstrap-table table tfoot td {
+	border-color: rgba(120, 120, 120, 0.1) !important;
+}
+
+.bootstrap-table tfoot tr {
+	background: rgba(120, 120, 120, 0.1);
+}
+
+.bootstrap-table thead {
+	background: rgba(120, 120, 120, 0.05);
+}
+
+/**
+********************
+LIGHT THEME - SYSTEM
+********************
+**/
+
+.theme-light {
+	/*background-color: rgba(102, 105, 104, 0.9);
+	background-image: radial-gradient(farthest-side ellipse at 10% 0, rgba(241, 241, 241, 0.95), rgba(212, 223, 227, 0.95));
+	background-image: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(241, 241, 241, 0.95), rgba(212, 223, 227, 0.95));
+	background-image: -moz-radial-gradient(10% 0, farthest-side ellipse, rgba(241, 241, 241, 0.95), rgba(212, 223, 227, 0.95));*/
+	background-image: url("../img/bg_light.png");
+}
+
+.theme-light h1 small {
+	color: #5f6975;
+}
+
+.theme-light .neg {
+	color: rgb(208, 43, 39);
+}
+
+/**
+LIGHT THEME - PANEL
+**/
+
+.theme-light .mbs-panel-bar {
+	border-color: rgba(255,255,255,0.6);
+}
+
+.theme-light .mbs-panel-content legend {
+	border-color: #2c3742;
+}
+
+/**
+LIGHT THEME - BUTTON
+**/
+
+
+
+/**
+LIGHT THEME - FORM
+**/
+
+.theme-light .form-group label {
+	color: #2c3742;
+}
+
+.theme-light .form-group input,
+.theme-light .form-group textarea,
+.theme-light .form-group select {
+	background: white;
+	color: #4c7191;
+}
+
+/**
+LIGHT THEME - TABLE
+**/
+
+.theme-light .bootstrap-table table th,
+.theme-light .bootstrap-table table tfoot {
+	color: #2c3742;
+	font-weight: bold;
+}
+
+.theme-light table tbody tr {
+	color: #4c7191;
+}
+
+.theme-light .pagination>li>a, 
+.theme-light .pagination>li>a:focus, 
+.theme-light .pagination>li>span, 
+.theme-light .pagination>li>span:focus {
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #2c3742;
+}
+
+.theme-light .pagination>.active>a,
+.theme-light .pagination>.active>a:focus,
+.theme-light .pagination>.active>a:hover,
+.theme-light .pagination>.active>span,
+.theme-light .pagination>.active>span:focus,
+.theme-light .pagination>.active>span:hover {
+	background: rgba(120, 120, 120, 0.1);
+	color: #2c3742;
+}
+
+.theme-light .pagination>.disabled>a, 
+.theme-light .pagination>.disabled>a:focus, 
+.theme-light .pagination>.disabled>a:hover, 
+.theme-light .pagination>.disabled>span, 
+.theme-light .pagination>.disabled>span:focus, 
+.theme-light .pagination>.disabled>span:hover {
+	color: #ddd;
+	background-color: transparent;
+}
+
+.theme-light .pagination>li:hover,
+.theme-light .pagination>li>a:hover {
+	background: #f5f5f5 !important;
+}
+
+/**
+LIGHT THEME - DATEPICKER
+**/
+
+.theme-light #ui-datepicker-div {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-top: 0 none;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+		-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.theme-light .ui-datepicker .ui-datepicker-header,
+.theme-light .ui-datepicker .ui-datepicker-title {
+	/*background-color: rgba(255,255,255,0.6);
+	color: #235987;*/
+}
+
+.theme-light .ui-datepicker-next,
+.theme-light .ui-datepicker-prev,
+.theme-light .ui-datepicker-calendar td a {	
+	color: #235987;
+}
+
+.theme-light .ui-datepicker-calendar tr {
+	/*background-color: rgba(255, 255, 255, 0.6);*/
+}
+
+.theme-light .ui-datepicker-calendar td a:hover {	
+	background-color: #f5f5f5;	
+	font-weight: bold;
+}
+
+.theme-light .ui-state-highlight {
+	color: #2c3742 !important;
+	font-weight: bold;
+}
+

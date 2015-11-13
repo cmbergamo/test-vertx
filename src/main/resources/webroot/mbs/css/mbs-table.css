@@ -1,0 +1,67 @@
+table th {
+	font-weight: 300;
+}
+
+table td {
+
+}
+
+.bootstrap-table thead tr {
+	vertical-align: middle;
+}
+
+.table-hover > tbody > tr:hover {
+	font-weight: bold;
+	background: rgba(120, 120, 120, 0.03);
+}
+
+.bootstrap-table .table {
+	padding: 0 !important;
+	border-bottom: 0px solid #ddd;
+}
+
+
+.fixed-table-container {
+	border: none !important;
+}
+
+.fixed-table-container thead th,
+.fixed-table-container tbody td {
+	border-left: 0px solid #ddd;
+}
+
+.fixed-table-pagination .pagination, 
+.fixed-table-pagination .pagination-detail {
+	margin-bottom: 0 !important;
+}
+
+/**
+TABLE PAGINATION
+**/
+.pagination,
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+	border-radius: 0px;
+}
+
+.pagination>.disabled>a, 
+.pagination>.disabled>a:focus, 
+.pagination>.disabled>a:hover, 
+.pagination>.disabled>span, 
+.pagination>.disabled>span:focus, 
+.pagination>.disabled>span:hover {
+	color: #ddd;
+	background-color: transparent;
+}
+
+.theme-light .pagination>.active>a,
+.theme-light .pagination>.active>a:focus,
+.theme-light .pagination>.active>a:hover,
+.theme-light .pagination>.active>span,
+.theme-light .pagination>.active>span:focus,
+.theme-light .pagination>.active>span:hover {
+	border-color: #ddd;
+	background: rgba(120, 120, 120, 0.1);
+}

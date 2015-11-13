@@ -1,0 +1,46 @@
+.tabela-mbs {
+	margin: 0px auto;
+	border-collapse: collapse;
+}
+
+.tabela-mbs thead {
+	border: 1px solid #bdbdbd ! important;
+}
+
+.tabela-mbs thead tr th {
+	border-bottom: 0px solid #bdbdbd ! important;
+}
+
+.tabela-mbs tbody tr:first-child {
+	border-top: 1px solid #bdbdbd ! important;
+}
+	
+.tabela-mbs tbody tr td {
+	border-top-style: none ! important;
+	/*border-bottom: 1px solid #bdbdbd;*/
+	border-bottom: none ! important;
+	border-left-style: none ! important;
+	border-right-style: none ! important;
+}
+
+.tabela-mbs thead, .tabela-mbs thead tr, .tabela-mbs tr th {
+	background-color: #eeeeee;	
+}
+
+.tabela-mbs thead th {
+	font-weight: bold;
+}
+
+.tabela-mbs tbody td {
+	color: #3276b1;
+}
+
+.tabela-mbs th, .tabela-mbs td {
+	padding: 10px 35px;
+}
+
+.tabela-mbs tr:hover td {
+	text-decoration: underline;
+	cursor: pointer;
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html id="extr-page">
+	<head>
+		<meta charset="utf-8">
+		<title> MBS - Sistema ERP</title>
+		<meta name="description" content="Sistema ERP da MBS Systems Ltda">
+		<meta name="author" content="MBS Systems Ltda">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/theme/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/theme/css/font-awesome.min.css">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/theme/css/smartadmin-production.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/theme/css/smartadmin-skins.min.css">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/css/mbs-login.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/mbs/plugins/flags/css/flag-icon.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/mbs/css/social-icon.css">
+
+		<!-- #GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+		
+		<link rel="shortcut icon" href="/static/mbs/img/icone.ico" type="image/x-icon">
+		<link rel="icon" href="/static/mbs/img/icone.ico" type="image/x-icon">
+	</head>
+	
+	@if{context.session().get("atSysUID") != null && context.session().get("atSysEID") != null}
+		response.sendRedirect(request.getContextPath() + "/sistema/home.do");
+	@end{}
+
+	<body class="container animated fadeInDown smart-style-2">
+
+		<header id="header" style="background-color:white !important;">
+
+			<div id="logo-group">
+				<span id="logo"> <img src="/static/mbs/img/logo-blue.png" alt="MBS"> </span>
+			</div>
+
+			<span id="extr-page-header-space"> <a href="/static/cadastro.do" class="btn btn-link">Novo Usuário?</a> </span>
+
+		</header>
+
+		<div id="main" role="main">
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+				
+				@if{ (context.session().get("atLgnErr") != null) }
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<div class="alert alert-danger fade in">
+							<i class="fa-fw fa fa-times"></i>
+							<strong>Erro! </strong><span>@{ context.session().get("atLgnErr") }</span>
+						</div>
+						
+					</div>
+				</div>
+				
+				@elseif{ (context.session().get("atLgnDca") != null) }
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<div class="alert alert-warning fade in">
+							<i class="fa-fw fa fa-warning"></i>
+							<strong>Dica da senha: </strong><span> @{ context.session().get("atLgnDca") }</span>
+						</div>
+						
+					</div>
+				</div>
+				
+				@else{}
+				
+				<p class="note text-center">Seja bem vindo ao sistema ERP da MBS Systems</p>
+				<p class="note text-center">Agradecemo-lhes pela preferência</p>
+				<p class="note text-center">Para conferir acesso ao sistema, informe o e-mail e a senha nos campos abaixo:</p>
+				
+				@end{}
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+						<div class="well no-padding">
+							<form action="/login.do" method="POST" id="login-form" class="smart-form client-form">
+								
+								<fieldset>
+									
+									<section>
+										<label class="label">E-mail</label>
+										<label class="input"> <i class="icon-append fa fa-user"></i>
+											<input type="email" name="usuario">
+											<b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Por favor informe o seu e-mail de login</b></label>
+									</section>
+
+									<section>
+										<label class="label">Senha</label>
+										<label class="input"> <i class="icon-append fa fa-lock"></i>
+											<input type="password" name="senha">
+											<b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Entre com a sua senha</b> </label>
+										<div class="note">
+											<a href="javascript:void(0);">Esqueceu a senha?</a>
+										</div>
+									</section>
+								</fieldset>
+								
+								<footer>
+									<button type="submit" class="btn btn-save">
+										Acessar
+									</button>
+								</footer>
+							</form>
+
+						</div>
+						
+						<p class="note text-center">Estamos também nas redes sociais</p>
+				
+							<ul class="list-inline text-center">
+								<li>
+									<a href="javascript:void(0);"><span class="socialicon" style="font-size: 3em; color: #3276b1;">circlefacebook</span></a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><span class="socialicon" style="font-size: 3em; color: #3276b1;">circletwitter</span></a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><span class="socialicon" style="font-size: 3em; color: #3276b1;">circlelinkedin</span></a>
+								</li>
+							</ul>
+							
+						<br>	
+								
+						<h5 class="text-center">MBS ©2015</h5>
+						<h5 class="text-center"><span class="flag-icon flag-icon-br"></span></h5>
+						<p class="note text-center"><a href="mailto:webmaster@mbsys.com.br" target="_top">webmaster@mbsys.com.br</a></p>
+				
+					</div>				
+				</div>
+			</div>
+
+		</div>
+
+		<!--================================================== -->	
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script src="/static/theme/js/plugin/pace/pace.min.js"></script>
+
+	    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script> if (!window.jQuery) { document.write('<script src="/static/theme/js/libs/jquery-2.0.2.min.js"><\/script>');} </script>
+
+	    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script> if (!window.jQuery.ui) { document.write('<script src="/static/theme/js/libs/jquery-ui-1.10.3.min.js"><\/script>');} </script>
+
+		<!-- BOOTSTRAP JS -->		
+		<script src="/static/theme/js/bootstrap/bootstrap.min.js"></script>
+		
+		<!--[if IE 8]>
+			
+			<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+			
+		<![endif]-->
+
+		<!-- MAIN APP JS FILE -->
+		<script src="/static/theme/js/app.min.js"></script>
+
+		<script type="text/javascript">
+			runAllForms();
+		</script>
+
+	</body>
+</html>

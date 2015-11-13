@@ -1,0 +1,62 @@
+.demo.activate {
+	background: white;
+	right:0px !important;
+	box-shadow: -11px 12px 23px rgba(0, 0, 0, 0.2);
+	padding:5px 10px 10px; 
+}
+
+	.demo #demo-setting {
+		color: white;
+	}
+	
+	.demo #demo-setting + form {
+		display:none;
+	}
+	
+	.demo.activate #demo-setting + form {
+		display:block;
+	}
+	
+	.demo {
+		position:absolute; 
+		top: 70px;
+		right:0px; 
+		width:350px;
+		z-index:902; 
+		background:#7e9db7;
+	}
+	
+	.demo > span {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		display: block;
+		height: 30px;
+		width: 30px;
+		border-radius: 5px 0 0 5px;
+		background: #7e9db7;
+		padding: 2px;
+		text-align: center;
+		line-height: 28px;
+		cursor:pointer;
+	}
+	
+	.demo > span i {
+		font-size:17px;
+	}
+	
+	.demo.activate > span i:before {
+		content: "\f00d";
+	}
+	
+	.demo.activate > span {
+		left: -30px;
+	}
+	
+	.demo > span:hover i {
+		color:#333 !important;
+	}
+	
+	.demo form section {
+		margin:0 !important;
+	}

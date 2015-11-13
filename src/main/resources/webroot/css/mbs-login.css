@@ -1,0 +1,33 @@
+/* FORMS */
+.txt-color-blue { 
+	color:#3276b1 ! important; 
+}
+
+label.label { 
+	color:#5c4f4f ! important;
+}
+
+input, select, textarea { 
+	color:#3276b1 ! important; 
+}
+
+/* BUTTONS */
+
+.btn {
+	border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 2px !important;
+}
+
+.btn.btn-save {
+	border-width: 1px ! important;
+	border-color: #276ba4 ! important;
+	background-color: #3276b1 ! important;
+	color: white ! important;
+}
+
+.btn.btn-save:hover {
+	color:#333 ! important;
+	background-color:#e6e6e6 ! important;
+	border-color:#adadad ! important;
+}

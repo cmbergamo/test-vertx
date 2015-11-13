@@ -1,0 +1,13 @@
+@font-face {
+    font-family: logoFont;
+    src: url(../fonts/arista.ttf);
+}
+
+@font-face {
+    font-family: sysFont;
+    src: url(../fonts/opensans.ttf);
+}
+
+.mbs-font {
+    font-family: logoFont;
+}

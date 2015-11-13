@@ -1,0 +1,90 @@
+/*.navbar-mbs {
+	background-color: white;
+	border-bottom: 1px solid #337ab7;
+	border-radius: 0px;
+}
+
+.navbar-mbs .navbar-toggle .icon-bar {
+    background-color: #2c3742;
+}
+
+.navbar-mbs input {
+	border-radius: 0px;
+}
+
+.nav > li > a:hover,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+	color: white;
+	background-color: #2c3742;
+}
+
+.navbar-mbs ul li > a,
+.navbar-mbs ul ul li > a
+.navbar-mbs .navbar-text {
+	color: #2c3742;
+}
+
+.navbar-mbs ul ul li > a:hover {
+	background-color: #2c3742;
+	color: white;
+}*/
+
+nav {
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+
+.navbar-mbs .navbar-toggle .icon-bar {
+    background-color: #2c3742;
+}
+
+nav ul li:hover > ul {
+	display: block !important;
+}
+	
+	/* ANULANDO BOOTSTRAP */
+	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
+	.nav > li > a:focus, .nav > li > a:hover {
+		background: none;
+	}
+	
+		nav ul li:hover {
+			background: #4b545f !important;
+			background: linear-gradient(top, #4f5964 0%, #5f6975 40%) !important;
+			background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%) !important;
+			background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%) !important;
+		}
+			nav ul li:hover a {
+				color: #fff !important;
+			}
+		
+		nav ul li a {
+			display: block !important; 
+			padding: 15px 10px !important;
+			color: #757575 !important; 
+			text-decoration: none !important;
+		}
+			
+		
+	nav ul ul {
+		background: #5f6975 !important;
+		border-radius: 0px !important; 
+		padding: 0 !important;
+	}
+		nav ul ul li {
+			border-top: 1px solid #6b727c !important;
+			border-bottom: 1px solid #575f6a !important; 
+		}
+			nav ul ul li a {
+				padding: 10px 20px !important;
+				color: #fff !important;
+			}	
+				nav ul ul li a:hover {
+					background: #4b545f !important;
+				}
+	

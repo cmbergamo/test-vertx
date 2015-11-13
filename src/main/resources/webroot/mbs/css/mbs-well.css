@@ -1,0 +1,17 @@
+.mbs-well {
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+.mbs-well h2 {
+	font-size: 1em;
+	font-weight: normal;
+	color: white;
+}
+
+.mbs-well div {
+	font-size: 1.5em;
+	text-align: right;
+	color: white;
+	margin: 0;
+}
